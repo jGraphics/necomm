@@ -1,3 +1,5 @@
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../actionTypes/cartActionTypes';
+
 const initialCartState = {
     items: [],
   };

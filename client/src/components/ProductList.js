@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
 function ProductList() {
-  const dispatch = useDispatch()
-  const products = useSelector(state => state.products)
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.products);
 
   useEffect(() => {
     // Defining my backend API URL
-    const apiUrl = 'http://localhost:3001/api/v1/products'; // Update with your actual backend URL
+    const apiUrl = 'http://localhost:3001/api/v1/products'; 
 
     // Make an Axios GET request to fetch products
     axios
@@ -41,6 +41,7 @@ function ProductList() {
         </div>
       ))}
     </div>
+  
   )
 }
 
